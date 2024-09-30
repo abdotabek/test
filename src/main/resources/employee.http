@@ -1,0 +1,25 @@
+POST http://localhost:8080/employee/create
+Content-Type: application/json
+
+{
+  "name": "sardor",
+  "surname": "turdaliyev",
+  "phone": "998945633300",
+  "itemDto": {
+    "carId": [2,3]
+  }
+}
+###
+GET http://localhost:8080/employee/getAll
+###
+PUT http://localhost:8080/employee/update/1
+Content-Type: application/json
+
+{
+  "name": "axad",
+  "surname": "axadov",
+  "phone": "998914827778",
+  "itemDto": {
+    "carId": [3]
+  }
+}

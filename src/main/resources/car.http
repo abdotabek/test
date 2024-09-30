@@ -1,0 +1,11 @@
+POST http://localhost:8080/car/create
+Content-Type: application/json
+
+{
+  "id": 4,
+  "model": "matiz",
+  "price": 5000
+}
+###
+GET http://localhost:8080/car/getAll
+###

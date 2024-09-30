@@ -1,0 +1,10 @@
+POST http://localhost:8080/salon/create
+Content-Type: application/json
+
+{
+  "salonName": "special",
+  "itemDto": {
+    "carId": [1,2],
+    "employeeId": [1,2]
+  }
+}
