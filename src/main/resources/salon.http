@@ -2,9 +2,23 @@ POST http://localhost:8080/salon/create
 Content-Type: application/json
 
 {
-  "salonName": "special",
+  "salonName": "it park",
   "itemDto": {
-    "carId": [1,2],
-    "employeeId": [1,2]
+    "carId": [3,4],
+    "employeeId": [3]
   }
 }
+### Get all salon
+GET http://localhost:8080/salon/getAll
+
+### Update salon by Id
+PUT http://localhost:8080/salon/update/1
+Content-Type: application/json
+
+{
+  "salonName": "CDTI"
+}
+###Delete salon by id
+DELETE http://localhost:8080/salon/delete/1
+### Find by id
+GET http://localhost:8080/salon/get/4

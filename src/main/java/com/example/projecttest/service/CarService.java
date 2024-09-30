@@ -18,6 +18,7 @@ public class CarService {
         car.setModel(carDto.getModel());
         car.setPrice(carDto.getPrice());
         return carRepo.save(car);
+       
     }
 
     public List<Car> getAllCars() {

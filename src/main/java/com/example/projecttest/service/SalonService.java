@@ -41,4 +41,16 @@ public class SalonService {
         byId.setSalonName(salonDto.getSalonName());
         return salonRepo.save(byId);
     }
+
+    public List<Salon> getAllSalon() {
+        List<Salon> all = salonRepo.findAll();
+        return all;
+    }
+
+    public void deleteById(Long id) {
+        salonRepo.deleteById(id);
+    }
+    public Salon findById(Long id) {
+        return salonRepo.findById(id).orElse(null);
+    }
 }
